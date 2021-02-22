@@ -30,9 +30,11 @@ const Home: React.FC = () => {
 
     return (
         <Wrapper>
+            <GlobalStyle />
             <div>Home</div>
             <GameList err={err} games={games} />
         </Wrapper>
     );
 };
+
 export default Home;

@@ -6,6 +6,7 @@ import { common } from "./common";
 const light: DefaultTheme = {
     colors: {
         ...common.colors,
+
         toggleBorder: "#ABB7C4",
         gradient: "linear-gradient(#39598A, #79D7ED)",
         background: "#282C34",
@@ -13,6 +14,9 @@ const light: DefaultTheme = {
         cardsBg: "#FFFFFF",
         textColor: "#000000",
         dodgerBlue: "#007BFF",
+    },
+    breakpoints: {
+        ...common.breakpoints,
     },
 };
 

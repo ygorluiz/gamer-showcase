@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { GameCard } from "@components/GameCard";
 //Global
 //Styles
-import { Container } from "./styled";
+import { List, ListItem } from "./styled";
 //Types
 import { Game } from "@interfaces/game";
 
@@ -19,15 +19,15 @@ export const GameList: React.FC<Props> = ({ err, games }) => {
         return <p>Unable to fetch games</p>;
     }
     if (!games?.length) {
-        return <p>No games avaliable</p>;
+        return <p>Loading Games</p>;
     }
     return (
-        <ul>
+        <List>
             {games.map((game) => (
-                <li key={game.id}>
+                <ListItem key={game.id}>
                     <GameCard content={game} />
-                </li>
+                </ListItem>
             ))}
-        </ul>
+        </List>
     );
 };

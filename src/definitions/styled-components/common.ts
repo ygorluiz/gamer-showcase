@@ -7,7 +7,7 @@ const common: BaseTheme = {
         transparent: "transparent",
         darkGrey: "#282C34",
         blackGrey: "#20232A",
-        white: "#FFFFFF",
+        white: "rgb(255, 255, 255)",
         black: "rgba(0, 0, 0, 1)",
         purple: "rgba(180, 59, 255, 1)",
         rose: "rgba(255, 69, 126, 1)",
@@ -16,6 +16,13 @@ const common: BaseTheme = {
         mustard: "rgba(255, 219, 69, 1)",
         blue: "rgba(70, 148, 255, 1)",
         green: "rgba(48, 229, 132, 1)",
+    },
+    breakpoints: {
+        tablet: "720px",
+        desktop: "1024px",
+    },
+    font: {
+        fontFamily: "Arial, Verdana",
     },
 };
 
